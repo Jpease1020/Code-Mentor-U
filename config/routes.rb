@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
+  get '/auth/linkedin', as: :login
+  get "/auth/linkedin/callback/", to: "sessions#create"
+  get "/logout", to: "sessions#destroy", as: "logout"
+  get "dashboard", to: "users#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
