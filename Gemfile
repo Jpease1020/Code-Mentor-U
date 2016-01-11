@@ -11,8 +11,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'linkedin'
-gem 'omniauth-linkedin-oauth2'
+# gem 'omniauth-linkedin-oauth2'
 gem 'figaro'
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'omniauth'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
