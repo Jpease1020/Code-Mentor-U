@@ -15,3 +15,12 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore capybara Screenshots
+capybara-*.html
+
+# Ignore byebug history
+/.byebug_history
